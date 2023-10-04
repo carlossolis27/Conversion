@@ -7,7 +7,7 @@ class ControladorDatos
         'byte' => 1,
         'kilobyte' => 1024,
         'megabyte' => 1048576,
-        'terabute' => 1073741824,
+        'terabyte' => 1073741824,
         'petabyte' => 1099511627776,
     ];
 
