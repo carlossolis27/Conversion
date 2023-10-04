@@ -19,7 +19,6 @@ class ControladorDatos
 
     $unidades = $this->unidades[$UnidadOrigen] / $this->unidades[$UnidadDestino];
     return $valor * $unidades;
-
     }
 }
 

@@ -17,7 +17,6 @@ class ModeloDatos
 
         $unidades = $this->unidades[$UnidadDestino] / $this->unidades[$UnidadOrigen];
         return $valor * $unidades;
-
     }
 }
 ?>
