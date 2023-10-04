@@ -1,0 +1,58 @@
+body {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto en blanco */
+    font-family: Arial, sans-serif; /* Fuente de texto (puedes cambiarla según tu preferencia) */
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+}
+
+/* A continuación, puedes definir los estilos para otros elementos de la página si es necesario */
+
+.btn {
+    font-size: 17px;
+    background: transparent;
+    border: none;
+    padding: 1em 1.5em;
+    color: #fff; /* Letras en blanco */
+    text-transform: uppercase;
+    position: relative;
+    transition: .5s ease;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #ffc506;
+    transition: .5s ease;
+}
+
+.btn:hover {
+    color: #1e1e2b;
+    transition-delay: .5s;
+}
+
+.btn:hover::before {
+    width: 100%;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background-color: #ffc506;
+    transition: .4s ease;
+    z-index: -1;
+}
+
+.btn:hover::after {
+    height: 100%;
+    transition-delay: 0.4s;
+    color: #fff; /* Fondo de letras en blanco */
+}
